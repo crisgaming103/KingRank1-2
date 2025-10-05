@@ -25,7 +25,7 @@
             background: rgba(30, 41, 59, 0.8);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
             border-radius: 16px;
-            border: 1px solid rgba(148, 163, 184, 0.2);
+            border: 1px solid red;
         }
         
         .neon-button {
@@ -50,11 +50,9 @@
         }
         
         .glow-text {
-            text-shadow: 0 0 10px rgba(99, 102, 241, 0.7),
-                       0 0 20px rgba(99, 102, 241, 0.5),
-                       0 0 30px rgba(99, 102, 241, 0.3);
+  color: black;
+  text-shadow: none;
         }
-        
         .game-font {
             font-family: 'Rajdhani', sans-serif;
         }
@@ -94,6 +92,31 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        footer {
+  font-family: 'Orbitron', sans-serif; 
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 0;
+  background: linear-gradient(90deg, violet, red, blue);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s linear infinite;
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
          <footer>
     © 2025 Cris Gaming Store. All Rights Reserved.
   </footer>
